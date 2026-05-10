@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+}
+
+/* =========================
+   Header
+========================= */
+
+header{
+    width:100%;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    padding:15px 40px;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Navbar Container */
+
+.head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* Website Title */
+
+.head h1{
+    color:white;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* Navigation */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* Navigation Links */
+
+.logo a{
+    text-decoration:none;
+    color:white;
+
+    font-size:18px;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+.logo a:hover{
+    background:rgba(255,255,255,0.2);
+    color:#facc15;
+}
+
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    .head{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .head h1{
+        font-size:26px;
+        text-align:center;
+    }
+
+    .logo{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .logo a{
+        font-size:16px;
+    }
+}
+
+.contact{
+    padding:80px;
+    text-align:center;
+
+    background:white;
+}
+
+.contact h2{
+    font-size:45px;
+
+    margin-bottom:20px;
+
+    color:#0f172a;
+}
+
+.contact p{
+    font-size:20px;
+
+    color:#475569;
+
+    margin-bottom:20px;
+}
+
+.contact-info{
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+}
+
+.contact-info div{
+    background:#e2e8f0;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    width:250px;
+}
+
+
+
+
+
+footer{
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+footer h2{
+    font-size:35px;
+
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:18px;
+
+    margin-bottom:20px;
+
+    color:#cbd5e1;
+}
+
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#38bdf8;
+}
+
+.copy{
+    font-size:16px;
+
+    color:#94a3b8;
+}

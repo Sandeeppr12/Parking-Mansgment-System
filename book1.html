@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book1.css">
+        <script>
+
+function confirmBooking(event){
+
+    event.preventDefault();
+
+    alert("Booking Confirmed Successfully");
+
+}
+
+</script>
+</head>
+<body>
+     <header>
+        <div class="head">
+        <div><h1>Smart Parking system</h1></div>
+          <div class="logo">
+           <div><a href="./Index.html">Home</a></div>
+           <div><a href="./about.html">About</a></div>
+           <div><a href="./contect.html">Contect</a></div>
+           <div><a href="./slot.html">Slots</a></div>
+           <div><a href="#">Admin</a></div>
+          </div>
+       </div>
+    </header>
+    <!-- =========================
+     Booking Form
+========================= -->
+
+<section class="booking-form" onsubmit="confirmBooking(event)">
+
+    <h2>Parking Booking Form</h2>
+
+    <p>
+        Fill in your details to reserve your parking slot
+        quickly and securely.
+    </p>
+
+    <form>
+
+        <!-- Name -->
+
+        <input 
+        type="text"
+        placeholder="Enter Your Name"
+        required>
+
+
+        <!-- Mobile Number -->
+
+        <input 
+        type="tel"
+        placeholder="Enter Mobile Number"
+        required>
+
+
+        <!-- Vehicle Name -->
+
+        <input 
+        type="text"
+        placeholder="Enter Vehicle Name"
+        required>
+
+
+        <!-- Vehicle Number -->
+
+        <input 
+        type="text"
+        placeholder="Enter Vehicle Number"
+        required>
+
+
+        <!-- Vehicle Type -->
+
+        <select required>
+
+            <option>
+                Select Vehicle Type
+            </option>
+
+            <option>
+                Car
+            </option>
+
+            <option>
+                Bike
+            </option>
+
+            <option>
+                VIP Vehicle
+            </option>
+
+        </select>
+
+
+        <!-- Date -->
+
+        <input type="date" required>
+
+
+        <!-- Time -->
+
+        <input type="time" required>
+
+
+        <!-- Submit Button -->
+
+        <button type="submit">
+            Confirm Booking
+        </button>
+
+    </form>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+}
+
+/* =========================
+   Header
+========================= */
+
+header{
+    width:100%;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    padding:15px 40px;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Navbar Container */
+
+.head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* Website Title */
+
+.head h1{
+    color:white;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* Navigation */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* Navigation Links */
+
+.logo a{
+    text-decoration:none;
+    color:white;
+
+    font-size:18px;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+.logo a:hover{
+    background:rgba(255,255,255,0.2);
+    color:#facc15;
+}
+
+/* =========================
+   About Section
+========================= */
+main{
+    background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #2563eb);
+}
+
+
+.about{
+    padding:150px 80px 80px;
+    text-align:center;
+    background:#e2e8f0;
+}
+
+.about h2{
+    font-size:45px;
+    margin-bottom:25px;
+    color:#0f172a;
+}
+
+.about p{
+    width:75%;
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:38px;
+
+    color:#334155;
+}
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    .head{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .head h1{
+        font-size:26px;
+        text-align:center;
+    }
+
+    .logo{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .logo a{
+        font-size:16px;
+    }
+
+    .about{
+        padding:180px 30px 60px;
+       
+    }
+
+    .about h2{
+        font-size:35px;
+    }
+
+    .about p{
+        width:100%;
+        font-size:18px;
+        line-height:32px;
+    }
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:480px){
+
+    .head h1{
+        font-size:22px;
+    }
+
+    .logo{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .logo a{
+        width:100%;
+        text-align:center;
+    }
+
+    .about{
+        padding:200px 20px 50px;
+    }
+
+    .about h2{
+        font-size:28px;
+    }
+
+    .about p{
+        font-size:16px;
+        line-height:28px;
+    }
+}
+
+footer{
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+footer h2{
+    font-size:35px;
+
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:18px;
+
+    margin-bottom:20px;
+
+    color:#cbd5e1;
+}
+
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#38bdf8;
+}
+
+.copy{
+    font-size:16px;
+
+    color:#94a3b8;
+}
